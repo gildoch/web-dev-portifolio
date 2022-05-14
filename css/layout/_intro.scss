@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  margin-top: 90px !important;
+  margin-top: 4.5em !important;
   .section__title--intro {
     font-weight: $fw-reg;
     strong {
@@ -17,6 +17,11 @@
   .intro__img {
     box-shadow: $bs;
   }
+}
+
+.fab {
+  font-size: 30px;
+  color: $clr-accent;
 }
 
 @media (min-width: 600px) {

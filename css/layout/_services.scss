@@ -33,6 +33,9 @@
 .service {
   max-width: 500px;
   margin: 0 auto;
+  p {
+    font-family: $ff-secondary;
+  }
 }
 
 @media (min-width: 800px) {

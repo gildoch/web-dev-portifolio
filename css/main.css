@@ -145,19 +145,36 @@ header {
   bottom: 6px;
 }
 
-.section__subtitle--about {
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 6em !important;
+}
+
+.about-me .section__title--about {
+  color: #212529;
+  font-weight: bold;
+}
+
+.about-me .section__subtitle--about {
   background: #f05f40;
   padding: 0.25em 1em;
   font-family: "Source Code Pro", monospace;
   margin-bottom: 1em;
 }
 
-.about-me {
-  max-width: 1000px;
-  margin: 0 auto;
+.about-me .about-me__body {
+  color: #212529;
+  font-family: "Source Code Pro", monospace;
 }
 
-.about-me__img {
+.about-me .about-me__body a {
+  color: #f05f40;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-me .about-me__img {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5);
 }
@@ -210,6 +227,10 @@ header {
   text-decoration: none;
 }
 
+.footer a .fab {
+  font-size: 25px;
+}
+
 .footer__link {
   font-weight: 900;
 }
@@ -245,7 +266,7 @@ header {
 
 .intro {
   position: relative;
-  margin-top: 90px !important;
+  margin-top: 4.5em !important;
 }
 
 .intro .section__title--intro {
@@ -267,6 +288,11 @@ header {
 .intro .intro__img {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5);
+}
+
+.fab {
+  font-size: 30px;
+  color: #f05f40;
 }
 
 @media (min-width: 600px) {
@@ -344,6 +370,10 @@ header {
   margin: 0 auto;
 }
 
+.service p {
+  font-family: "Source Code Pro", monospace;
+}
+
 @media (min-width: 800px) {
   .services {
     display: -webkit-box;
@@ -415,6 +445,79 @@ header {
   font-weight: 900;
   margin-bottom: 2em;
   margin-bottom: 10px;
+}
+
+.skills-me {
+  background-color: #f05f40;
+  text-align: center;
+}
+
+.skills-me .section__title-skill {
+  color: #fff;
+}
+
+.skills-me .skills-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-column-gap: 4em;
+          column-gap: 4em;
+}
+
+.skills-me .skills-wrapper .skill-bar-container {
+  min-width: 500px;
+}
+
+.skills-me .skills-wrapper .skill-bar-container p {
+  text-align: left;
+  margin-left: 5%;
+  color: #212529;
+  font-weight: bold;
+}
+
+.skills-me .skills-wrapper .skill-bar-container .cont-skill {
+  width: 100%;
+  background-color: #ddd;
+  height: 5px;
+  border-radius: 25%;
+}
+
+.html {
+  width: 90%;
+  background-color: #08fdd8;
+}
+
+.css {
+  width: 80%;
+  background-color: #2196f3;
+}
+
+.js {
+  width: 65%;
+  background-color: #f44336;
+}
+
+.php {
+  width: 60%;
+  background-color: #ff2253;
+}
+
+.skills {
+  height: 5px;
+  border-radius: 25%;
+}
+
+@media (max-width: 600px) {
+  .skills-wrapper {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 /*
