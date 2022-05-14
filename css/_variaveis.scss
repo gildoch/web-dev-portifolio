@@ -1,0 +1,52 @@
+//Global variables
+
+//fonts
+$ff-primary: "Source Sans Pro", sans-serif;
+$ff-secondary: "Source Code Pro", monospace;
+
+//font weight
+$fw-reg: 300;
+$fw-bold: 900;
+
+//Colors
+$clr-light: #fff;
+$clr-dark: #212529;
+$clr-accent: #f05f40;
+$text-faded: rgba(255, 255, 255, 0.7);
+
+/*
+  
+  
+*/
+
+//font size
+$fs-h1: 3rem;
+$fs-h2: 2.25rem;
+$fs-h3: 1.25rem;
+$fs-body: 1rem;
+
+//border
+$border-width: 1px;
+$border-radius: 10px;
+
+//breakpoint
+$breakpoint-768: 768px;
+$breakpoint-600: 600px;
+$breakpoint-800: 800px;
+
+//Box Shadow
+$bs: 0 0 0 0.2rem rgba(240, 95, 64, 0.5);
+
+/*
+//Button
+$btn-main-bg: $base-lighter;
+
+//$btn-primary-bg:     $brand-primary;
+$btn-dark-bg: $clr-dark;
+$btn-third-bg: $brand-third;
+$btn-border-dark: $clr-dark;
+
+$btn-padding-x: 1rem;
+$btn-padding-y: 0.5rem;
+$btn-line-height: $base-line-height;
+$btn-transition: all, 0.2s ease-in-out;*/

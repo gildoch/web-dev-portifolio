@@ -1,0 +1,103 @@
+@import "../variaveis";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: $clr-light;
+  color: $clr-dark;
+  margin: 0;
+  font-family: $ff-primary;
+  font-size: $fs-body;
+  line-height: 1.6;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+strong {
+  font-weight: $fw-bold;
+}
+
+:focus {
+  outline: 3px solid $clr-accent;
+  outline-offset: 3px;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: $fs-h1;
+}
+h2 {
+  font-size: $fs-h2;
+}
+h3 {
+  font-size: $fs-h3;
+}
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: $fs-h3;
+}
+
+@media (min-width: $breakpoint-800) {
+  :root {
+    $fs-h1: 4.5rem;
+    $fs-h2: 3.75rem;
+    $fs-h3: 1.5rem;
+    $fs-body: 1.125rem;
+  }
+}
+
+@media (min-width: $breakpoint-600) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    /*grid-template-areas: 
+            "img title"
+            "img subtitle";*/
+    grid-template-columns: min-content max-content;
+  }
+
+  @media (min-width: $breakpoint-800) {
+    .services {
+      display: flex;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .service + .service {
+      margin-left: 2em;
+    }
+  }
+  .img_intro {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+  }
+}
