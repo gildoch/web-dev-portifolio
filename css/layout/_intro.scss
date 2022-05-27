@@ -14,6 +14,13 @@
     margin-bottom: 1em;
     display: inline-block;
   }
+  .social-intro {
+    text-align: center;
+    .social-intro .social-list {
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+  }
   .intro__img {
     box-shadow: $bs;
   }
@@ -22,6 +29,12 @@
 .fab {
   font-size: 30px;
   color: $clr-accent;
+  transition: all 0.4s ease-in-out;
+}
+
+.fab:hover {
+  color: $clr-accent;
+  transition: all 0.4s ease-in-out;
 }
 
 @media (min-width: 600px) {
