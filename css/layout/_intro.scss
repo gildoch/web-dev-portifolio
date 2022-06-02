@@ -15,10 +15,14 @@
     display: inline-block;
   }
   .social-intro {
-    text-align: center;
-    .social-intro .social-list {
+    .social-list {
+      justify-content: center;
       padding: 5px;
       margin-bottom: 5px;
+      list-style: none;
+      margin-top: 15px;
+      display: flex;
+      column-gap: 35px;
     }
   }
   .intro__img {
@@ -29,12 +33,10 @@
 .fab {
   font-size: 30px;
   color: $clr-accent;
-  transition: all 0.4s ease-in-out;
-}
-
-.fab:hover {
-  color: $clr-accent;
-  transition: all 0.4s ease-in-out;
+  transition: transform 200ms ease-in-out;
+  &:hover {
+    transform: scale(1.5);
+  }
 }
 
 @media (min-width: 600px) {

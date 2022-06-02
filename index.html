@@ -26,6 +26,12 @@
       crossorigin="anonymous"
     />
 
+    <!--Devicons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
@@ -33,7 +39,7 @@
     />
     <!-- Custom Css (Style) -->
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- Header Start -->
@@ -46,15 +52,17 @@
       </button>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
           <li class="nav__item">
-            <a href="#services" class="nav__link">My Services</a>
+            <a href="./index.html" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About me</a>
+            <a href="./index.html#services" class="nav__link">My Services</a>
           </li>
           <li class="nav__item">
-            <a href="#work" class="nav__link">My Work</a>
+            <a href="./index.html#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="./index.html#work" class="nav__link">My Work</a>
           </li>
         </ul>
       </nav>
@@ -105,8 +113,14 @@
             </a>
           </li>
         </ul>
+
         <div>
-          <a href="#work" class="btn btn-download">Descarregar CV</a>
+          <a
+            href="https://drive.google.com/file/d/1CrsDE6W1xRYS4NHttZtzeEEvhxb3eSvJ/view?usp=sharing"
+            target="_blank"
+            class="btn btn-download"
+            >Descarregar CV</a
+          >
         </div>
       </div>
     </section>
@@ -140,7 +154,7 @@
             target="_blank"
             >LinkedIn</a
           >
-          para mais sdetalhes ou apenas entre em
+          para mais detalhes ou apenas entre em
           <a href="mailto:gildochauze@gmail.com">contato</a> comigo
         </p>
       </div>
@@ -153,121 +167,171 @@
     </section>
 
     <!-- My skill Start -->
-    <section id="service" class="parallax-section">
+    <section id="service" class="skill-me">
       <div class="container">
+        <div class="section-title">
+          <!-- SECTION TITLE -->
+          <h2 class="section__title--skill">Habilidades</h2>
+        </div>
         <div class="row">
-          <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-            <!-- SECTION TITLE -->
-            <h2 class="section__title">Habilidades</h2>
-          </div>
-
-          <div class="col-md-2 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-md-1 col-sm-6">
             <div class="service-thumb">
-              <span class="skill-icons"
-                ><ion-icon name="logo-html5" class="skill-badge"></ion-icon
-              ></span>
-
+              <span class="skill-icons html">
+                <i class="devicon-html5-plain colored"></i>
+              </span>
               <h4>HTML5</h4>
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-md-2 col-sm-6">
             <div class="service-thumb bg-grey">
-              <span class="skill-icons"
-                ><ion-icon name="logo-css3"></ion-icon
-              ></span>
-
+              <span class="skill-icons css">
+                <i class="devicon-css3-plain colored"></i>
+              </span>
               <h4>CSS3</h4>
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-md-2 col-sm-6">
             <div class="service-thumb">
-              <span class="skill-icons"
-                ><ion-icon name="logo-nodejs"></ion-icon
-              ></span>
-
+              <span class="skill-icons js">
+                <i class="devicon-javascript-plain colored"></i>
+              </span>
               <h4>Javascript</h4>
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-md-2 col-sm-6">
             <div class="service-thumb">
-              <span class="skill-icons"
-                ><ion-icon name="logo-sass"></ion-icon
-              ></span>
+              <span class="skill-icons nodejs">
+                <i class="devicon-nodejs-plain colored"></i>
+              </span>
+              <h4>Nodejs</h4>
+            </div>
+          </div>
 
+          <div class="col-md-2 col-sm-6">
+            <div class="service-thumb">
+              <span class="skill-icons react">
+                <i class="devicon-react-original colored"></i>
+              </span>
+              <h4>React</h4>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-sm-6">
+            <div class="service-thumb">
+              <span class="skill-icons sass">
+                <i class="devicon-sass-original colored"></i>
+              </span>
               <h4>SASS</h4>
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-md-2 col-sm-6">
             <div class="service-thumb">
-              <span class="skill-icons"
-                ><ion-icon name="logo-figma"></ion-icon
-              ></span>
+              <span class="skill-icons bootstrap">
+                <i class="devicon-bootstrap-plain colored"></i>
+              </span>
+              <h4>Bootstrap</h4>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-sm-6">
+            <div class="service-thumb">
+              <span class="skill-icons figma">
+                <i class="devicon-figma-plain colored"></i>
+              </span>
 
               <h4>Figma</h4>
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+          <div class="col-md-2 col-sm-6">
             <div class="service-thumb">
-              <span class="skill-icons"
-                ><ion-icon name="logo-react"></ion-icon
-              ></span>
-              <h4>React</h4>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-            <!-- SECTION TITLE -->
-          </div>
-
-          <div class="col-md-2 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="service-thumb">
-              <span class="skill-icons"><i class="fab fa-codepen"></i></span>
+              <span class="skill-icons csharp">
+                <i class="devicon-csharp-plain colored"></i>
+              </span>
               <h4>C#</h4>
             </div>
           </div>
-          <div class="col-md-2 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-md-2 col-sm-6">
             <div class="service-thumb">
-              <span class="skill-icons"
-                ><ion-icon name="logo-markdown"></ion-icon
-              ></span>
-              <h4>Markdown</h4>
+              <span class="skill-icons java">
+                <i class="devicon-java-plain colored"></i>
+              </span>
+              <h4>Java</h4>
             </div>
           </div>
-          <div class="col-md-2 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-md-2 col-sm-6">
             <div class="service-thumb">
-              <span class="skill-icons"
-                ><ion-icon name="logo-wordpress"></ion-icon
-              ></span>
+              <span class="skill-icons wordpress">
+                <i class="devicon-wordpress-plain colored"></i>
+              </span>
               <h4>Wordpress</h4>
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-md-2 col-sm-6">
             <div class="service-thumb bg-grey">
-              <span class="skill-icons">
-                <ion-icon name="git-branch-outline"></ion-icon>
+              <span class="skill-icons git">
+                <i class="devicon-git-plain colored"></i>
               </span>
               <h4 class="white-color">Git</h4>
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-md-2 col-sm-6">
             <div class="service-thumb">
-              <span class="skill-icons"><i class="fab fa-codepen"></i></span>
+              <span class="skill-icons mysql">
+                <i class="devicon-mysql-plain colored"></i>
+              </span>
               <h4>MySQL</h4>
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+          <div class="col-md-2 col-sm-6">
             <div class="service-thumb">
-              <span class="skill-icons"><i class="fab fa-codepen"></i></span>
-              <h4>Bootstrap</h4>
+              <span class="skill-icons sqlserver">
+                <i class="devicon-microsoftsqlserver-plain colored"></i>
+              </span>
+              <h4>SQL Server</h4>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-sm-6">
+            <div class="service-thumb">
+              <span class="skill-icons MongoDB">
+                <i class="devicon-mongodb-plain colored"></i>
+              </span>
+              <h4>MongoDB</h4>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-sm-6">
+            <div class="service-thumb">
+              <span class="skill-icons aws">
+                <i class="devicon-amazonwebservices-original colored"></i>
+              </span>
+              <h4>AWS</h4>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-sm-6">
+            <div class="service-thumb">
+              <span class="skill-icons windows">
+                <i class="devicon-windows8-original colored"></i>
+              </span>
+              <h4>Windows</h4>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-sm-6">
+            <div class="service-thumb">
+              <span class="skill-icons ubuntu">
+                <i class="devicon-ubuntu-plain colored"></i>
+              </span>
+              <h4>Ubuntu</h4>
             </div>
           </div>
         </div>
@@ -344,13 +408,13 @@
         </a>
 
         <!-- Portfolio item 02 -->
-        <a href="portfolio-item.html" class="portfolio__item">
-          <img src="img/portfolio-02.jpg" alt="" class="portfolio__img" />
+        <a href="./pages/portfolio-item-ipemo.html" class="portfolio__item">
+          <img src="./img/portfolio-01.jpg" alt="" class="portfolio__img" />
         </a>
 
         <!-- Portfolio item 03 -->
-        <a href="portfolio-item.html" class="portfolio__item">
-          <img src="img/portfolio-03.jpg" alt="" class="portfolio__img" />
+        <a href="./pages/portfolio-item-ciss.html" class="portfolio__item">
+          <img src="./img/portfolio-01.jpg" alt="" class="portfolio__img" />
         </a>
 
         <!-- Portfolio item 04 -->

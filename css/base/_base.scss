@@ -7,7 +7,7 @@
 }
 
 body {
-  background: $clr-light;
+  background-color: darken($color: $clr-light, $amount: 3);
   color: $clr-dark;
   margin: 0;
   font-family: $ff-primary;
