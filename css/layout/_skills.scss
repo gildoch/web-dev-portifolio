@@ -46,7 +46,6 @@
 
 @media (max-width: 600px) {
   .row {
-    background-color: black;
     margin: 0;
     display: inline-flex;
   }
@@ -70,4 +69,5 @@
 .roll-h {
   display: inline-flex;
   animation: slide 15s linear infinite;
+  margin-left: 5px;
 }

@@ -436,7 +436,6 @@ header {
 
 @media (max-width: 600px) {
   .row {
-    background-color: black;
     margin: 0;
     display: inline-flex;
   }
@@ -457,6 +456,7 @@ header {
 .roll-h {
   display: inline-flex;
   animation: slide 15s linear infinite;
+  margin-left: 5px;
 }
 
 .project-galeria {
@@ -530,7 +530,6 @@ $btn-transition: all, 0.2s ease-in-out;*/
 }
 
 body {
-  background-color: #f7f7f7;
   color: #212529;
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
