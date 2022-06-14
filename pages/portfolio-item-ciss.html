@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--External links-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gchauze Portfolio Website</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+
+    <!--Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
     />
     <link
       rel="stylesheet"
@@ -19,13 +26,11 @@
       crossorigin="anonymous"
     />
 
-    <!-- Update these with your own fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-      rel="stylesheet"
-    />
+    <!--Custom Css-->
 
     <link rel="stylesheet" href="../css/main.css" />
+
+    <title>Gchauze Portfolio Website</title>
   </head>
   <body>
     <header>
@@ -58,7 +63,7 @@
         The title <strong>of my project</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-      <img src="../img/IMG_20211004_181240.jpg" alt="" class="intro__img" />
+      <img src="../img/ciss/portfolio-14.jpg" alt="" class="intro__img" />
     </section>
 
     <div class="portfolio-item-individual">
@@ -78,32 +83,14 @@
       </p>
     </div>
 
-    <div class="project-galeria">
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20210907_104104.jpg" alt="" />
-      </div>
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20210907_104138.jpg" alt="" />
-      </div>
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20210912_143854.jpg" alt="" />
-      </div>
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20211004_163046.jpg" alt="" />
-      </div>
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20211004_181240.jpg" alt="" />
-      </div>
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20211004_163013.jpg" alt="" />
-      </div>
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20211004_162958.jpg" alt="" />
-      </div>
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20211004_163033.jpg" alt="" />
-      </div>
+    <!--Gallery section start-->
+    <div class="container">
+      <div id="gallery"></div>
     </div>
+    <div id="pop-up">
+      <img src="" alt="" id="selected-image" />
+    </div>
+    <!--Gallery section end-->
 
     <!-- Footer -->
     <footer class="footer">
@@ -151,6 +138,7 @@
       </ul>
     </footer>
 
+    <script src="../js/galleryCiss.js"></script>
     <script src="../js/index.js"></script>
   </body>
 </html>

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--External links-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gchauze Portfolio Website</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
@@ -18,14 +19,16 @@
       integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
       crossorigin="anonymous"
     />
-
-    <!-- Update these with your own fonts -->
+    <!--Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
       rel="stylesheet"
     />
 
+    <!--Custom css-->
     <link rel="stylesheet" href="../css/main.css" />
+
+    <title>Gchauze Portfolio Website</title>
   </head>
   <body>
     <header>
@@ -55,55 +58,38 @@
 
     <section class="intro">
       <h1 class="section__title section__title--intro">
-        The title <strong>of my project</strong>
+        Projecto<strong>IPEMO</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-      <img src="../img/IMG_20210328_120552.jpg" alt="" class="intro__img" />
+      <p class="section__subtitle section__subtitle--intro">
+        Sala de informatica
+      </p>
+      <img src="../img/ipemo/portfolio-2.jpg" alt="" class="intro__img" />
     </section>
 
     <div class="portfolio-item-individual">
       <p>
-        Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae
-        eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius
-        earum?
+        Instituto Politécnico de Educação Profissional de Moçambique (IPEMO)
+      </p>
+      <p>O projecto consistiu na montagem de uma sala de informatica</p>
+      <p>
+        Estão localizados no bairro de Malhazine, na rua de Bagamoyo, logo
+        depois da terminar de Malhazine, o edifício é um prédio de três
+        pisos,Estão no primeiro e terceiro piso.
       </p>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet
-        tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?
-      </p>
-      <p>
-        Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae
-        eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius
-        earum?
+        Para mais detalhes sobre o instituto visite a pagina official do
+        <a href="https://www.facebook.com/fbipemo/">Facebook</a>
       </p>
     </div>
 
-    <div class="project-galeria">
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20210328_120528.jpg" alt="" />
-      </div>
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20210328_120533.jpg" alt="" />
-      </div>
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20210328_120552.jpg" alt="" />
-      </div>
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20210328_120603.jpg" alt="" />
-      </div>
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20210328_120613.jpg" alt="" />
-      </div>
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20210328_120635.jpg" alt="" />
-      </div>
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20210328_120643.jpg" alt="" />
-      </div>
-      <div class="foto-wrapper">
-        <img src="../img/IMG_20210403_174926.jpg" alt="" />
-      </div>
+    <!--Gallery section start-->
+    <div class="container">
+      <div id="gallery"></div>
     </div>
+    <div id="pop-up">
+      <img src="" alt="" id="selected-image" />
+    </div>
+    <!--Gallery section end-->
 
     <!-- Footer -->
     <footer class="footer">
@@ -151,6 +137,7 @@
       </ul>
     </footer>
 
+    <script src="../js/galleryIpemo.js"></script>
     <script src="../js/index.js"></script>
   </body>
 </html>
