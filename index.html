@@ -70,60 +70,71 @@
     <!-- Header Start -->
 
     <!-- Introduction Start-->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Olá, Sou <strong>Gildo Chauze</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">
-        desenvolvedor front-end
-      </p>
-      <img
-        src="./img/dev-gch-01.jpg"
-        alt="a picture of Gildo Chauze smiling"
-        class="intro__img"
-      />
-      <!--Social-->
-      <div class="social-intro">
-        <ul class="social-list">
-          <li class="social-list__item">
+    <div class="landing">
+      <div class="landing--container">
+        <div class="landing--container-left">
+          <div class="lcl--content">
             <a
-              class="social-list__link"
+              class="landing--social"
               href="https://www.linkedin.com/in/gildo-chauze-a264b7105/"
               target="_blank"
             >
               <i class="fab fa-linkedin"></i>
             </a>
-          </li>
-          <li class="social-list__item">
             <a
-              class="social-list__link"
+              class="landing--social"
               href="https://twitter.com"
               target="_blank"
             >
               <i class="fab fa-twitter"></i>
             </a>
-          </li>
-          <li class="social-list__item">
             <a
-              class="social-list__link"
+              class="landing--social"
               href="https://github.com/gildoch"
               target="_blank"
             >
               <i class="fab fa-github"></i>
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <img
+          src="./img/dev-gch-01.jpg"
+          alt="imagem de gildo sorrindo"
+          class="landing--img"
+        />
+        <div class="landing--container-right">
+          <div class="lcr--content">
+            <h6>Web Developer</h6>
+            <h1>Gildo chauze</h1>
+            <p>
+              Não havia um pássaro no céu, mas não foi isso que chamou sua
+              atenção. Foram as nuvens. O verde profundo que não é a cor das
+              nuvens, mas veio com elas. Ela sabia o que estava por vir e
+              esperava estar preparada.
+            </p>
 
-        <div>
-          <a
-            href="https://drive.google.com/file/d/1CrsDE6W1xRYS4NHttZtzeEEvhxb3eSvJ/view?usp=sharing"
-            target="_blank"
-            class="btn btn-download"
-            >Descarregar CV</a
-          >
+            <div class="lcr-buttonContainer">
+              <a
+                href="https://drive.google.com/file/d/1Yqu0d7DasMc8sk7mY778kDGtMeqRWAd2/view?usp=sharing"
+                download="resume"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button class="btn btn-download">Descarregar CV</button>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1Yqu0d7DasMc8sk7mY778kDGtMeqRWAd2/view?usp=sharing"
+                download="resume"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button class="btn btn-contacto">Contacto</button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
     <!-- Introduction End-->
 
     <!-- About me -->
@@ -167,173 +178,126 @@
     </section>
 
     <!-- My skill Start -->
-    <section id="service" class="skill-me">
-      <div class="container">
-        <div class="section-title">
-          <!-- SECTION TITLE -->
-          <h2 class="section__title--skill">Habilidades</h2>
+    <section id="skills" class="skill-me">
+      <div class="section-title">
+        <!-- SECTION TITLE -->
+        <h2 class="section__title--skill">Habilidades</h2>
+        <button id="toggle-skills" class="skills-btn">
+          <ion-icon name="ellipsis-horizontal-outline" size="large"></ion-icon>
+        </button>
+        <button id="toggle-skills1" class="skills-btn">
+          <ion-icon name="apps-outline" size="large"></ion-icon>
+        </button>
+      </div>
+      <div class="container" id="skill-change">
+        <div class="service-thumb">
+          <span class="skill-icons html">
+            <i class="devicon-html5-plain colored"></i>
+          </span>
+          <h4>HTML5</h4>
         </div>
-        <div class="row">
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons html">
-                <i class="devicon-html5-plain colored"></i>
-              </span>
-              <h4>HTML5</h4>
-            </div>
-          </div>
+        <div class="service-thumb bg-grey">
+          <span class="skill-icons css">
+            <i class="devicon-css3-plain colored"></i>
+          </span>
+          <h4>CSS3</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons js">
+            <i class="devicon-javascript-plain colored"></i>
+          </span>
+          <h4>Javascript</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons nodejs">
+            <i class="devicon-nodejs-plain colored"></i>
+          </span>
+          <h4>Nodejs</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons react">
+            <i class="devicon-react-original colored"></i>
+          </span>
+          <h4>React</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons sass">
+            <i class="devicon-sass-original colored"></i>
+          </span>
+          <h4>SASS</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons bootstrap">
+            <i class="devicon-bootstrap-plain colored"></i>
+          </span>
+          <h4>Bootstrap</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons figma">
+            <i class="devicon-figma-plain colored"></i>
+          </span>
 
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb bg-grey">
-              <span class="skill-icons css">
-                <i class="devicon-css3-plain colored"></i>
-              </span>
-              <h4>CSS3</h4>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons js">
-                <i class="devicon-javascript-plain colored"></i>
-              </span>
-              <h4>Javascript</h4>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons nodejs">
-                <i class="devicon-nodejs-plain colored"></i>
-              </span>
-              <h4>Nodejs</h4>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons react">
-                <i class="devicon-react-original colored"></i>
-              </span>
-              <h4>React</h4>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons sass">
-                <i class="devicon-sass-original colored"></i>
-              </span>
-              <h4>SASS</h4>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons bootstrap">
-                <i class="devicon-bootstrap-plain colored"></i>
-              </span>
-              <h4>Bootstrap</h4>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons figma">
-                <i class="devicon-figma-plain colored"></i>
-              </span>
-
-              <h4>Figma</h4>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons csharp">
-                <i class="devicon-csharp-plain colored"></i>
-              </span>
-              <h4>C#</h4>
-            </div>
-          </div>
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons java">
-                <i class="devicon-java-plain colored"></i>
-              </span>
-              <h4>Java</h4>
-            </div>
-          </div>
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons wordpress">
-                <i class="devicon-wordpress-plain colored"></i>
-              </span>
-              <h4>Wordpress</h4>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb bg-grey">
-              <span class="skill-icons git">
-                <i class="devicon-git-plain colored"></i>
-              </span>
-              <h4 class="white-color">Git</h4>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons mysql">
-                <i class="devicon-mysql-plain colored"></i>
-              </span>
-              <h4>MySQL</h4>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons sqlserver">
-                <i class="devicon-microsoftsqlserver-plain colored"></i>
-              </span>
-              <h4>SQL Server</h4>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons MongoDB">
-                <i class="devicon-mongodb-plain colored"></i>
-              </span>
-              <h4>MongoDB</h4>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons aws">
-                <i class="devicon-amazonwebservices-original colored"></i>
-              </span>
-              <h4>AWS</h4>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons windows">
-                <i class="devicon-windows8-original colored"></i>
-              </span>
-              <h4>Windows</h4>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-sm-6">
-            <div class="service-thumb">
-              <span class="skill-icons ubuntu">
-                <i class="devicon-ubuntu-plain colored"></i>
-              </span>
-              <h4>Ubuntu</h4>
-            </div>
-          </div>
+          <h4>Figma</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons csharp">
+            <i class="devicon-csharp-plain colored"></i>
+          </span>
+          <h4>C#</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons java">
+            <i class="devicon-java-plain colored"></i>
+          </span>
+          <h4>Java</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons wordpress">
+            <i class="devicon-wordpress-plain colored"></i>
+          </span>
+          <h4>Wordpress</h4>
+        </div>
+        <div class="service-thumb bg-grey">
+          <span class="skill-icons git">
+            <i class="devicon-git-plain colored"></i>
+          </span>
+          <h4 class="white-color">Git</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons mysql">
+            <i class="devicon-mysql-plain colored"></i>
+          </span>
+          <h4>MySQL</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons sqlserver">
+            <i class="devicon-microsoftsqlserver-plain colored"></i>
+          </span>
+          <h4>SQL Server</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons MongoDB">
+            <i class="devicon-mongodb-plain colored"></i>
+          </span>
+          <h4>MongoDB</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons aws">
+            <i class="devicon-amazonwebservices-original colored"></i>
+          </span>
+          <h4>AWS</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons windows">
+            <i class="devicon-windows8-original colored"></i>
+          </span>
+          <h4>Windows</h4>
+        </div>
+        <div class="service-thumb">
+          <span class="skill-icons ubuntu">
+            <i class="devicon-ubuntu-plain colored"></i>
+          </span>
+          <h4>Ubuntu</h4>
         </div>
       </div>
     </section>

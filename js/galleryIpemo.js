@@ -6,14 +6,18 @@ const selectedIndex = null;
 
 imageIndexes.forEach((i) => {
   const image = document.createElement("img");
-  image.src = `../img/ipemo/portfolio-${i}.jpg`;
+  // image.src = `../img/ipemo/portfolio-${i}.jpg`;
+  image.src = `https://ik.imagekit.io/gildoch/ipemo/tr:w-600/portfolio-${i}.jpg`;
   image.alt = `Portifolio image ${1} of Ipemo page`;
   image.classList.add("gallery-img");
 
   image.addEventListener("click", () => {
     //popup stuff
     popup.style.transform = `translateY(0)`;
-    selectedImage.src = `../img/ipemo/portfolio-${i}.jpg`;
+    selectedImage.src = `https://ik.imagekit.io/gildoch/ipemo/portfolio-${i}.jpg`;
+    selectedImage.srcset = `https://ik.imagekit.io/gildoch/ipemo/tr:w-400/portfolio-${i}.jpg 400w,
+    https://ik.imagekit.io/gildoch/ipemo/tr:w-800/portfolio-${i}.jpg 800w,
+    https://ik.imagekit.io/gildoch/ipemo/tr:w-1200/portfolio-${i}.jpg 1200w`;
     selectedImage.alt = `Portifolio image ${1} of Ipemo page`;
   });
   gallery.appendChild(image);

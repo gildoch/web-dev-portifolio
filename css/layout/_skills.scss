@@ -1,20 +1,30 @@
+.skills-btn {
+  margin-top: 10px;
+  transition: transform 200ms ease-in-out;
+  color: $clr-accent;
+  border: none;
+  background-color: darken($color: #ffffff, $amount: 8);
+  padding: 10px;
+}
+
+.skills-btn:hover {
+  transform: scale(1.1);
+}
 .skill-me {
   background-color: darken($color: #ffffff, $amount: 8);
-  .container {
-    .section-title {
-      margin: 0;
-      padding-bottom: 32px;
-      text-align: center;
-      font-family: $ff-secondary;
-      .section__title--skill {
-        color: $clr-accent;
-      }
+  .section-title {
+    margin: 0;
+    text-align: center;
+    font-family: $ff-secondary;
+    .section__title--skill {
+      color: $clr-accent;
     }
   }
 }
-
-.row {
-  display: inline-flex !important;
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
 }
 
 .service-thumb {
@@ -42,19 +52,6 @@
 
 .skill-icons {
   font-size: 50px;
-}
-
-@media (max-width: 600px) {
-  .row {
-    margin: 0;
-    display: inline-flex;
-  }
-}
-
-@media (max-width: $breakpoint-800) {
-  .service-thumb {
-    width: 200px;
-  }
 }
 
 @keyframes slide {
