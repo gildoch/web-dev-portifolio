@@ -8,6 +8,7 @@
   font-size: $fs-h3;
   .footer__link {
     font-weight: $fw-bold;
+    color: $clr-accent;
     &:hover {
       text-decoration: underline;
     }
@@ -31,8 +32,11 @@
   .fab {
     font-size: 25px;
     transition: transform 200ms ease-in-out;
+    color: $clr-accent;
+
     &:hover {
       transform: scale(1.5);
+      color: $clr-dark;
     }
   }
 }

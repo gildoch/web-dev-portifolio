@@ -189,6 +189,7 @@ header {
 }
 .footer .footer__link {
   font-weight: 900;
+  color: #f05f40;
 }
 .footer .footer__link:hover {
   text-decoration: underline;
@@ -211,13 +212,15 @@ header {
 .footer a .fab {
   font-size: 25px;
   transition: transform 200ms ease-in-out;
+  color: #f05f40;
 }
 .footer a .fab:hover {
   transform: scale(1.5);
+  color: #212529;
 }
 
 .landing {
-  height: 100vh;
+  height: 110vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -413,7 +416,7 @@ header {
     box-sizing: border-box;
     padding: 0 2rem;
     flex: initial;
-    height: 70%;
+    height: 80%;
     width: 100%;
     background-color: #eaeaea;
     align-items: center;
@@ -440,32 +443,38 @@ header {
   .lcr--content p {
     font-size: 0.95rem;
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto;
     width: 90%;
   }
 
   .lcr-buttonContainer {
-    margin: 15px auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
   }
   .lcr-buttonContainer:hover {
     background-color: transparent !important;
   }
-
-  .lcr-buttonContainer button {
-    margin-top: -20%;
-  }
 }
 @media (max-width: 500px) {
   .lcr--content {
-    margin-top: 35%;
+    margin-top: 40%;
+  }
+  .lcr--content h6 {
+    padding-top: 5px;
+  }
+  .lcr--content .lcr-buttonContainer .btn-contacto {
+    visibility: hidden;
   }
 }
 @media (max-width: 370px) {
-  .lcr--content {
-    margin-top: 60%;
+  .landing--container-right .lcr--content {
+    margin-top: 65%;
+  }
+  .landing--container-right .lcr-buttonContainer .btn-contacto {
+    visibility: hidden;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
@@ -477,6 +486,37 @@ header {
     --img-size: 150px;
     left: 50%;
     top: 20%;
+  }
+}
+.tracking-in-contract {
+  -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
   }
 }
 .my-services {
