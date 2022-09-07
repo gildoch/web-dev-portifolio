@@ -1,70 +1,90 @@
-.skills-btn {
-  margin-top: 10px;
-  transition: transform 200ms ease-in-out;
-  color: $clr-accent;
-  border: none;
-  background-color: darken($color: #ffffff, $amount: 8);
-  padding: 10px;
-}
-
-.skills-btn:hover {
-  transform: scale(1.1);
-}
 .skill-me {
   background-color: darken($color: #ffffff, $amount: 8);
+  padding-top: 0.8em;
+
   .section-title {
     margin: 0;
+    padding: .8em;
     text-align: center;
     font-family: $ff-secondary;
+
     .section__title--skill {
       color: $clr-accent;
     }
+
+    .skills-btn {
+      margin-top: 10px;
+      transition: transform 200ms ease-in-out;
+      border: none;
+      background-color: darken($color: #ffffff, $amount: 8);
+      width: 50px;
+
+      ion-icon {
+        color: $clr-accent
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px;
+
+    .service-thumb {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border-radius: 5px;
+      padding: 35px 10px;
+      margin-top: 10px;
+      cursor: crosshair;
+      position: relative;
+      top: 0;
+      -webkit-transition: all ease-in-out 0.4s;
+      transition: 300ms ease-in-out;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
+      border-radius: 10px;
+
+      .skill-icons {
+        font-size: 50px;
+      }
+
+      &:hover {
+        top: -5px;
+        transform: scale(1.15);
+      }
+    }
+
   }
 }
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 20px;
+
+
+.roll-h {
+  display: inline-flex !important;
+  animation: slide 15s linear infinite;
+  margin-left: 5px;
 }
 
-.service-thumb {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  border-radius: 5px;
-  padding: 35px 10px;
-  margin-top: 10px;
-  cursor: crosshair;
-  position: relative;
-  top: 0;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: 300ms ease-in-out;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
-  border-radius: 10px;
-}
-
-.service-thumb:hover {
-  top: -5px;
-  transform: scale(1.15);
-}
-
-.skill-icons {
-  font-size: 50px;
-}
 
 @keyframes slide {
   0% {
     transform: translate3d(0, 0, 0);
   }
+
   100% {
     transform: translate3d(-1800px, 0, 0);
   }
 }
 
-.roll-h {
-  display: inline-flex;
-  animation: slide 15s linear infinite;
-  margin-left: 5px;
+@media (max-width: 600px) {
+  #skill-change div:nth-child(4)~div {
+    display: none;
+  }
 }

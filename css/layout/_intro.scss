@@ -1,5 +1,5 @@
 .landing {
-  height: 110vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +83,7 @@
   font-weight: 600;
   font-size: 3.25rem;
   line-height: 110%;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .lcr--content p {
@@ -268,35 +268,3 @@
   }
 }
 
-.tracking-in-contract {
-  -webkit-animation: tracking-in-contract 0.8s
-    cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
-
-@-webkit-keyframes tracking-in-contract {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
-}
-@keyframes tracking-in-contract {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
-}

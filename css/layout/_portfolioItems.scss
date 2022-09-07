@@ -1,3 +1,84 @@
+/*  Intro section  */
+
+.intro {
+  position: relative;
+}
+
+.intro__img {
+  box-shadow: $bs;
+}
+
+.section__subtitle--intro {
+  display: inline-block;
+}
+
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+
+  .intro__img {
+    grid-area: img;
+    min-width: 400px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .section__subtitle--intro {
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 6em);
+  }
+}
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+  font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong {
+  display: block;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: $clr-accent;
+  padding: 0.25em 1em;
+  font-family: $ff-secondary;
+  margin-bottom: 1em;
+}
+
 .project-galeria {
   width: 85%;
   margin: auto;
@@ -12,6 +93,136 @@
     box-shadow: rgba(228, 104, 104, 0.24) 0px 3px 8px;
   }
 }
+
+
+/*Javascript Project Items*/
+.card-container {
+  display: flex;
+  display: grid;
+  padding: 1em 3em;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  .card {
+    max-width: 300px;
+    height: 300px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    &:hover {
+      height: 400px;
+    }
+    &:hover .content {
+      visibility: visible;
+      opacity: 1;
+      margin-top: -40px;
+      transition-delay: 0.3s;
+    }
+    .imgContainer {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      top: -50px;
+      left: 10px;
+      z-index: 1;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      img {
+        max-width: 100%;
+        border-radius: 4px;
+      }
+    }
+    .content {
+      position: relative;
+      margin-top: -140px;
+      padding: 10px 15px;
+      text-align: center;
+      color: #111;
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  
+}
+
+
+
+
+button {
+  width: 223px;
+  height: 42px;
+  margin: 25px 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/*Buttons colors*/
+.counter-btn {
+  background-color: darkred;
+  color: white;
+}
+
+.unit-btn {
+  background-color: #1f2937;
+  color: white;
+}
+
+.blackjack-btn {
+  background: goldenrod;
+  color: #016f32;
+}
+
+#passGen-btn,
+#github-btn {
+  background-color: #10b981;
+  border: 1px solid #10b981;
+  color: #ffffff;
+}
+
+#github-btn {
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#github-btn .btn-text {
+  color: #ffffff;
+}
+
+@media (max-width: 330px) {
+  .container .card .imgContainer {
+    left: -2px;
+  }
+}
+
+/*Icons*/
+ion-icon {
+  color: #ffffff;
+}
+
+/*Passenger count*/
+/*Unit converter*/
+
+/*Black Jack*/
+
+/*Pass Generator*/
+
+/*Percent calculator*/
+
+/*Buttons*/
+.btn-wrapper {
+  text-align: center;
+}
+
+.btn-wrapper a {
+  display: inline-flex;
+  column-gap: 5px;
+  text-decoration: none;
+  color: #ffffff;
+}
+/**/
 
 @media (max-width: $breakpoint-600) {
   .project-galeria {

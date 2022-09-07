@@ -1,34 +1,38 @@
 const skillsData = [
-  "HTML",
-  "CSS",
-  "Javascript",
-  "C#",
-  "Java",
-  "PHP",
-  "React",
-  "Bootstrap",
-  "Wordpress",
-  "Markdown",
-  "Sketch",
-  "Figma",
-  "Git",
-  "MongoDB",
-  "MySQL",
+  { skill: "HTML5", icon: '<i class="devicon-html5-plain colored"></i>' },
+  { skill: "CSS", icon: '<i class="devicon-css3-plain colored"></i>' },
+  { skill: "Javascript", icon: '<i class="devicon-javascript-plain colored"></i>' },
+  { skill: "React", icon: '<i class="devicon-react-original colored"></i>' },
+  { skill: "C#", icon: '<i class="devicon-csharp-plain colored"></i>' },
+  { skill: "Java", icon: '<i class="devicon-java-plain colored"></i>' },
+  { skill: "Bootstrap", icon: '<i class="devicon-bootstrap-plain colored"></i>' },
+  { skill: "SASS", icon: '<i class="devicon-sass-original colored"></i>' },
+  { skill: "Wordpress", icon: '<i class="devicon-wordpress-plain colored"></i>' },
+  { skill: "Figma", icon: '<i class="devicon-figma-plain colored"></i>' },
+  { skill: "Git", icon: '<i class="devicon-git-plain colored"></i>' },
+  { skill: "MongoDB", icon: '<i class="devicon-mongodb-plain colored"></i>' },
+  { skill: "MySQL", icon: '<i class="devicon-mysql-plain colored"></i>' },
+  { skill: "SQL Server", icon: '<i class="devicon-microsoftsqlserver-plain colored"></i>' },
+  { skill: "Nodejs", icon: '<i class="devicon-nodejs-plain colored"></i>' },
+  { skill: "AWS", icon: '<i class="devicon-amazonwebservices-original colored"></i>' },
+  { skill: "Sketch", icon: 's' },
+  { skill: "Markdown", icon: 'M' }
 ];
 
-/*var skillsWrapper = document.getElementById("skwrapper");
-
+var skillsWrapper = document.getElementById("skill-change");
 const skillElements = skillsData.map((skill) => {
-  return `<div class="skills-card"><p>${skill.replace(",", "")}</p></div>`;
-});
+  return `
+    <div class="service-thumb">
+        <span class="skill-icons html">
+          ${skill.icon}
+        </span>
+        <h4>${skill.skill}</h4>
+      </div> 
+      `;
+}).join('');
 
-skillsWrapper.innerHTML = skillElements;
-console.log(skillElements);*/
-
-// Choose your skills from below. Make sure it's in the same format and spelled correctly.
-// Couldn't find the required skills? Raise an issue on github at https://github.com/hhhrrrttt222111/developer-portfolio/issues/new
-
-// AVAILABLE SKILLS
+console.log(skillElements)
+skillsWrapper.innerHTML = skillElements
 
 /* 
     HTML

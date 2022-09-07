@@ -15,9 +15,8 @@ navLinks.forEach((link) => {
 const btnToggleSkills = document.getElementById("toggle-skills");
 const btnToggleSkills1 = document.getElementById("toggle-skills1");
 
-const divSkillChange = document.getElementById("skill-change");
 
-console.log(divSkillChange);
+const divSkillChange = document.getElementById("skill-change");
 
 btnToggleSkills.addEventListener("click", () => {
   divSkillChange.classList.remove("row");
@@ -28,3 +27,9 @@ btnToggleSkills1.addEventListener("click", () => {
   divSkillChange.classList.remove("roll-h");
   divSkillChange.classList.add("row");
 });
+
+
+/*Animacoes */
+$(document).ready(() => {
+  $
+})

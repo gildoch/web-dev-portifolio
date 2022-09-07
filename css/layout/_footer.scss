@@ -33,7 +33,7 @@
     font-size: 25px;
     transition: transform 200ms ease-in-out;
     color: $clr-accent;
-
+    transition: transform .7s ;
     &:hover {
       transform: scale(1.5);
       color: $clr-dark;
