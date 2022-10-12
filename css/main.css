@@ -475,44 +475,40 @@ $btn-transition: all, 0.2s ease-in-out;*/
   text-align: justify;
   text-align: center;
 }
-
-.section__title--services {
+.my-services .section__title--services {
   color: #f05f40;
   position: relative;
   text-align: center;
 }
-
-.section__title--services::after {
+.my-services .section__title--services::after {
   content: "";
   display: block;
   width: 2em;
-  height: 1px;
+  height: 2px;
   margin: 0.5em auto 1em;
   background: #f05f40;
   opacity: 0.25;
 }
-
-.services {
-  margin-bottom: 4em;
+.my-services .services {
+  margin-bottom: 2.5em;
 }
-.services h3 {
-  text-align: center;
-  font-weight: bold;
-}
-
-.service {
+.my-services .services .service {
   max-width: 500px;
   margin: 0 auto;
 }
-.service h3 {
-  margin-bottom: 15px;
-}
-.service p {
-  font-family: "Source Code Pro", monospace;
-}
-
-.service-icons {
+.my-services .services .service .service-icons {
   font-size: 50px;
+}
+.my-services .services .service .service-icons ion-icon {
+  color: #f05f40;
+  margin-top: 0.8em;
+}
+.my-services .services .service h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.my-services .services .service p {
+  font-family: "Source Code Pro", monospace;
 }
 
 @media (min-width: 800px) {
@@ -523,7 +519,7 @@ $btn-transition: all, 0.2s ease-in-out;*/
     margin-right: auto;
   }
   .service + .service {
-    margin-left: 2em;
+    margin-left: 1em;
   }
 }
 .my-work {
@@ -540,7 +536,9 @@ $btn-transition: all, 0.2s ease-in-out;*/
 }
 .my-work .portifolio-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  width: 70%;
+  margin: 1em auto;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 20px;
 }
 .my-work .portifolio-wrapper .project-card {

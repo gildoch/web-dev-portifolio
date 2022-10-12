@@ -4,46 +4,52 @@
   color: $clr-dark;
   text-align: justify;
   text-align: center;
-}
 
-.section__title--services {
-  color: $clr-accent;
-  position: relative;
-  text-align: center;
-}
-
-.section__title--services::after {
-  content: "";
-  display: block;
-  width: 2em;
-  height: 1px;
-  margin: 0.5em auto 1em;
-  background: $clr-accent;
-  opacity: 0.25;
-}
-
-.services {
-  margin-bottom: 4em;
-  h3 {
+  .section__title--services {
+    color: $clr-accent;
+    position: relative;
     text-align: center;
-    font-weight: bold;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 2em;
+      height: 2px;
+      margin: 0.5em auto 1em;
+      background: $clr-accent;
+      opacity: 0.25;
+    }
   }
+
+  .services {
+    margin-bottom: 2.5em;
+
+    .service {
+      max-width: 500px;
+      margin: 0 auto;
+
+      .service-icons {
+        font-size: 50px;
+
+        ion-icon {
+          color: $clr-accent;
+          margin-top: .8em;
+        }
+      }
+
+      h3 {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      p {
+        font-family: $ff-secondary;
+      }
+    }
+  }
+
 }
 
-.service {
-  max-width: 500px;
-  margin: 0 auto;
-  h3 {
-    margin-bottom: 15px;
-  }
-  p {
-    font-family: $ff-secondary;
-  }
-}
-
-.service-icons {
-  font-size: 50px;
-}
 
 @media (min-width: 800px) {
   .services {
@@ -53,7 +59,8 @@
     margin-right: auto;
   }
 
-  .service + .service {
-    margin-left: 2em;
+  .service+.service {
+    margin-left: 1em;
+
   }
 }
