@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .card-item {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            display: grid;
+            width: 80%;
+            margin: 1em auto;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .img-fluid {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .portfolio-box {
+            position: relative;
+            display: block;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .portfolio-box .portfolio-box-caption {
+            position: absolute;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            opacity: 0;
+            color: #fff;
+            background: rgba(240, 95, 64, 0.9);
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+
+        .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+
+        .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+        .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+            padding: 0 15px;
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+            font-size: 18px;
+        }
+
+        .portfolio-box:hover .portfolio-box-caption {
+            opacity: 1;
+        }
+
+        .portfolio-box:focus {
+            outline: none;
+        }
+
+        @media (min-width: 768px) {
+            .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+                font-size: 16px;
+            }
+
+            .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+                font-size: 22px;
+            }
+        }
+    </style>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-item">
+            <a class="portfolio-box" href="#">
+                <img class="img-fluid" src="./assets/AirBnb Experiences.png" alt="">
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category text-faded">
+                            <ul>
+                                <li>HTML |</li>
+                                <li>CSS |</li>
+                                <li>React.js |</li>
+                                <li>Sqllite </li>
+                            </ul>
+                        </div>
+                        <div class="project-name">
+                            <h3>Find my Duo</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card-item">
+            <a class="portfolio-box" href="#">
+                <img class="img-fluid" src="./assets/findDuo.png" alt="">
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category text-faded">
+                            <ul>
+                                <li>HTML |</li>
+                                <li>CSS |</li>
+                                <li>React.js |</li>
+                                <li>Sqllite </li>
+                            </ul>
+                        </div>
+                        <div class="project-name">
+                            <h3>Find my Duo</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card-item">
+            <a class="portfolio-box" href="#">
+                <img class="img-fluid" src="./assets/answers.png" alt="">
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category text-faded">
+                            <ul>
+                                <li>HTML |</li>
+                                <li>CSS |</li>
+                                <li>React.js |</li>
+                                <li>Sqllite </li>
+                            </ul>
+                        </div>
+                        <div class="project-name">
+                            <h3>Find my Duo</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card-item">
+            <a class="portfolio-box" href="#">
+                <img class="img-fluid" src="./assets/dark-active.png" alt="">
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category text-faded">
+                            <ul>
+                                <li>HTML |</li>
+                                <li>CSS |</li>
+                                <li>React.js |</li>
+                                <li>Sqllite </li>
+                            </ul>
+                        </div>
+                        <div class="project-name">
+                            <h3>Find my Duo</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

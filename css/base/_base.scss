@@ -7,6 +7,7 @@
 }
 
 body {
+  background-color: $clr-bg-1;
   color: $clr-dark;
   margin: 0;
   font-family: $ff-primary;
@@ -28,7 +29,7 @@ strong {
 }
 
 :focus {
-  outline: 3px solid $clr-accent;
+  outline: 2px solid $clr-accent;
   outline-offset: 3px;
 }
 
@@ -44,9 +45,11 @@ h3 {
 h1 {
   font-size: $fs-h1;
 }
+
 h2 {
   font-size: $fs-h2;
 }
+
 h3 {
   font-size: $fs-h3;
 }
@@ -60,14 +63,6 @@ h3 {
   font-size: $fs-h3;
 }
 
-@media (min-width: $breakpoint-800) {
-  :root {
-    $fs-h1: 4.5rem;
-    $fs-h2: 3.75rem;
-    $fs-h3: 1.5rem;
-    $fs-body: 1.125rem;
-  }
-}
 
 @media (min-width: $breakpoint-600) {
   .intro {
@@ -81,22 +76,30 @@ h3 {
     grid-template-columns: min-content max-content;
   }
 
-  @media (min-width: $breakpoint-800) {
-    .services {
-      display: flex;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .service + .service {
-      margin-left: 2em;
-    }
-  }
   .img_intro {
     grid-area: img;
     min-width: 250px;
     position: relative;
     z-index: 2;
+  }
+}
+
+@media (min-width: $breakpoint-800) {
+  :root {
+    $fs-h1: 4.5rem;
+    $fs-h2: 3.75rem;
+    $fs-h3: 1.5rem;
+    $fs-body: 1.125rem;
+  }
+
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service+.service {
+    margin-left: 2em;
   }
 }

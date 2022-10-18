@@ -1,10 +1,9 @@
 .skill-me {
-  background-color: darken($color: #ffffff, $amount: 8);
-  padding-top: 0.8em;
+  /* background-color: darken($color: #ffffff, $amount: 8); */
 
   .section-title {
     margin: 0;
-    padding: .8em;
+    padding: 0.8em;
     text-align: center;
     font-family: $ff-secondary;
 
@@ -20,14 +19,13 @@
       width: 50px;
 
       ion-icon {
-        color: $clr-accent
+        color: $clr-accent;
       }
 
       &:hover {
         transform: scale(1.2);
       }
     }
-
   }
 
   .container {
@@ -61,17 +59,14 @@
         transform: scale(1.15);
       }
     }
-
   }
 }
-
 
 .roll-h {
   display: inline-flex !important;
   animation: slide 15s linear infinite;
   margin-left: 5px;
 }
-
 
 @keyframes slide {
   0% {

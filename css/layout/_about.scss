@@ -2,25 +2,30 @@
   max-width: 1000px;
   margin: 0 auto;
   margin-top: 6em !important;
+
   .section__title--about {
     color: $clr-dark;
     font-weight: bold;
   }
+
   .section__subtitle--about {
     background: $clr-accent;
     padding: 0.25em 1em;
     font-family: $ff-secondary;
     margin-bottom: 1em;
   }
+
   .about-me__body {
     color: $clr-dark;
     font-family: $ff-secondary;
+
     a {
       color: $clr-accent;
       text-decoration: none;
       font-weight: bold;
     }
   }
+
   .about-me__img {
     box-shadow: $bs;
   }

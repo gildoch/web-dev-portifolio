@@ -86,6 +86,7 @@
   flex-wrap: wrap;
   align-content: center;
   padding: 5px;
+
   .foto-wrapper img {
     width: 300px;
     height: 300px;
@@ -102,6 +103,7 @@
   padding: 1em 3em;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 20px;
+
   .card {
     max-width: 300px;
     height: 300px;
@@ -109,15 +111,18 @@
     padding: 20px 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in-out;
+
     &:hover {
       height: 400px;
     }
+
     &:hover .content {
       visibility: visible;
       opacity: 1;
       margin-top: -40px;
       transition-delay: 0.3s;
     }
+
     .imgContainer {
       position: relative;
       width: 250px;
@@ -126,11 +131,13 @@
       left: 10px;
       z-index: 1;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
       img {
         max-width: 100%;
         border-radius: 4px;
       }
     }
+
     .content {
       position: relative;
       margin-top: -140px;
@@ -143,19 +150,7 @@
       transition: 0.3s ease-in-out;
     }
   }
-  
-}
 
-
-
-
-button {
-  width: 223px;
-  height: 42px;
-  margin: 25px 5px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
 }
 
 /*Buttons colors*/
@@ -222,6 +217,7 @@ ion-icon {
   text-decoration: none;
   color: #ffffff;
 }
+
 /**/
 
 @media (max-width: $breakpoint-600) {
@@ -231,6 +227,7 @@ ion-icon {
     display: block;
     align-content: center;
     padding: 5px;
+
     .foto-wrapper img {
       width: 80%;
       height: 300px;
@@ -248,6 +245,7 @@ ion-icon {
     display: block;
     align-content: center;
     padding: 5px;
+
     .foto-wrapper img {
       width: 80%;
       height: 300px;

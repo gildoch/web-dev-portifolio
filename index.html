@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+  <link href="https://fonts.googleAPIs.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
     rel="stylesheet" />
   <!-- Custom Css (Style) -->
 
@@ -32,10 +32,11 @@
   <!-- Header Start -->
   <header class="main-header">
     <div class="logo">
-      <img src="img/gchauze.jpeg" alt="" />
+      <img src="./assets/gchauze.jpeg" alt="" />
     </div>
     <button class="nav-toggle" aria-label="toggle navigation">
       <span class="hamburger"></span>
+
     </button>
     <nav class="nav">
       <ul class="nav__list">
@@ -72,7 +73,7 @@
           </a>
         </div>
       </div>
-      <img src="./img/dev-gch-01.jpg" alt="imagem de gildo sorrindo" class="landing--img" />
+      <img src="./assets/dev-gch-01.jpg" alt="imagem de gildo sorrindo" class="landing--img" />
       <div class="landing--container-right">
         <div class="lcr--content">
           <h6>Web Developer</h6>
@@ -129,7 +130,7 @@
       </p>
     </div>
 
-    <img src="img/dev-gch-02.jpg" alt="Jane leaning against a bus" class="about-me__img" />
+    <img src="assets/dev-gch-02.jpg" alt="gildo in blue toxed" class="about-me__img" />
   </section>
 
   <!-- My skill Start -->
@@ -137,15 +138,8 @@
     <div class="section-title">
       <!-- SECTION TITLE -->
       <h2 class="section__title--skill">Habilidades</h2>
-      <button id="toggle-skills" class="skills-btn">
-        <ion-icon name="ellipsis-horizontal-outline" size="large"></ion-icon>
-      </button>
-      <button id="toggle-skills1" class="skills-btn">
-        <ion-icon name="apps-outline" size="large"></ion-icon>
-      </button>
     </div>
-    <div class="container .roll-hh " id="skill-change">
-
+    <div class="container  " id="skill-change">
     </div>
   </section>
   <!-- My skill End -->
@@ -190,7 +184,7 @@
     </div>
     <!-- / services -->
 
-    <a href="#work" class="btn">Meu Trabalho</a>
+    <a href="#work"><button class="btn">Meu Trabalho</button></a>
   </section>
   <!-- My services End -->
 
@@ -200,219 +194,214 @@
     <p class="section__subtitle section__subtitle--work">
       Uma seleção da minha gama de trabalhos
     </p>
-    <div class="portifolio-wrapper">
 
-      <!--project item 1-->
-      <div class="project-card">
-        <div class="project-item">
-          <header class="project-item-header">
-            <div class="project-item-icons">
-              <div class="folder-img">
-                <ion-icon size="large" name="folder-outline"></ion-icon>
-              </div>
-              <div class="git-link">
-                <a class="project-link-icons" href="https://github.com/gildoch" target="_blank">
-                  <ion-icon size="large" name="logo-github"></ion-icon>
-                </a>
-
-                <a class="project-link-icons" href="https://gildoch.github.io/travel-journal/" target="_blank">
-                  <ion-icon size="large" name="link-outline"></ion-icon>
-                </a>
-
-              </div>
-            </div>
-          </header>
-          <div class="project-item-content">
-            <h2>My Travel Journal</h2>
-            <p></p>
-
-          </div>
-          <footer class="project-item-footer">
-            <ul>
-              <li>HTML |</li>
-              <li>CSS |</li>
-              <li>React.js</li>
-            </ul>
-          </footer>
-        </div>
-      </div>
-      <!--project item 2-->
-
-      <div class="project-card">
-        <div class="project-item">
-          <header class="project-item-header">
-            <div class="project-item-icons">
-              <div class="folder-img">
-                <ion-icon size="large" name="folder-outline"></ion-icon>
-              </div>
-              <div class="git-link">
-                <a class="project-link-icons" href="https://github.com/gildoch" target="_blank">
-                  <ion-icon size="large" name="logo-github"></ion-icon>
-                </a>
-
-                <a class="project-link-icons" href="https://gildoch.github.io/meme-generator/" target="_blank">
-                  <ion-icon size="large" name="link-outline"></ion-icon>
-                </a>
-
-              </div>
-            </div>
-          </header>
-          <div class="project-item-content">
-            <h2>Meme Generator</h2>
-            <p></p>
-          </div>
-          <footer class="project-item-footer">
+    <div class="portfolio">
+      <!--Project item 1 start-->
+      <div class="cardport">
+        <img src="./assets/findDuo.png"></img>
+        <div class="cardportcontent">
+          <h3>Find my Duo</h3>
+          <div class="cardportitems">
             <ul>
               <li>HTML |</li>
               <li>CSS |</li>
               <li>React.js |</li>
-              <li>Meme Generator API</li>
-              <li></li>
+              <li>Sqllite </li>
             </ul>
-          </footer>
+          </div>
+          <a href="#"><button class="btn">VISUALIZAR</button></a>
         </div>
       </div>
-      <!--project item 3-->
+      <!--Project item 1 end-->
 
-      <div class="project-card">
-        <div class="project-item">
-          <header class="project-item-header">
-            <div class="project-item-icons">
-              <div class="folder-img">
-                <ion-icon size="large" name="folder-outline"></ion-icon>
-              </div>
-              <div class="git-link">
-                <a class="project-link-icons" href="https://github.com/gildoch" target="_blank">
-                  <ion-icon size="large" name="logo-github"></ion-icon>
-                </a>
+      <!--Project item 2 start-->
+      <div class="cardport">
+        <img src="./assets/populated-watchlist.png"></img>
+        <div class="cardportcontent">
+          <h3>Watchlist</h3>
 
-                <a class="project-link-icons" href="./pages/portfolio-item-ipemo.html" target="_blank">
-                  <ion-icon size="large" name="link-outline"></ion-icon>
-                </a>
-
-              </div>
-            </div>
-          </header>
-          <div class="project-item-content">
-            <h2>Projecto IPEMO</h2>
-            <p></p>
-          </div>
-          <footer class="project-item-footer">
-            <ul>
-              <li>Internet |</li>
-              <li>Cabeamento |</li>
-              <li>Rede de Computadores |</li>
-            </ul>
-          </footer>
-        </div>
-      </div>
-      <!--project item 4-->
-
-      <div class="project-card">
-        <div class="project-item">
-          <header class="project-item-header">
-            <div class="project-item-icons">
-              <div class="folder-img">
-                <ion-icon size="large" name="folder-outline"></ion-icon>
-              </div>
-              <div class="git-link">
-                <a class="project-link-icons" href="https://github.com/gildoch" target="_blank">
-                  <ion-icon size="large" name="logo-github"></ion-icon>
-                </a>
-
-                <a class="project-link-icons" href="./pages/portfolio-item-ciss.html" target="_blank">
-                  <ion-icon size="large" name="link-outline"></ion-icon>
-                </a>
-
-              </div>
-            </div>
-          </header>
-          <div class="project-item-content">
-            <h2>Projecto CCV</h2>
-            <p> </p>
-          </div>
-          <footer class="project-item-footer">
-            <ul>
-              <li>Internet |</li>
-              <li>Cabeamento |</li>
-              <li>Rede de Computadores |</li>
-            </ul>
-          </footer>
-        </div>
-      </div>
-      <!--project item 5-->
-
-      <div class="project-card">
-        <div class="project-item">
-          <header class="project-item-header">
-            <div class="project-item-icons">
-              <div class="folder-img">
-                <ion-icon size="large" name="folder-outline"></ion-icon>
-              </div>
-              <div class="git-link">
-                <a class="project-link-icons" href="https://github.com/gildoch" target="_blank">
-                  <ion-icon size="large" name="logo-github"></ion-icon>
-                </a>
-
-                <a class="project-link-icons" href="#" target="_blank">
-                  <ion-icon size="large" name="link-outline"></ion-icon>
-                </a>
-
-              </div>
-            </div>
-          </header>
-          <div class="project-item-content">
-            <h2>Productivity Tracker</h2>
-            <p></p>
-          </div>
-          <footer class="project-item-footer">
+          <div class="cardportitems">
             <ul>
               <li>HTML |</li>
               <li>CSS |</li>
               <li>React.js |</li>
-              <li>MongoDB</li>
+              <li>MongoDB |</li>
+              <li>OMDB API </li>
             </ul>
-          </footer>
+          </div>
+          <a href="https://gildoch.github.io/movie-watchlist/index.html" target="_blank"><button
+              class="btn">VISUALIZAR</button></a>
         </div>
       </div>
-      <!--project item 6-->
+      <!--Project item 2 end-->
 
-      <div class="project-card">
-        <div class="project-item">
-          <header class="project-item-header">
-            <div class="project-item-icons">
-              <div class="folder-img">
-                <ion-icon size="large" name="folder-outline"></ion-icon>
-              </div>
-              <div class="git-link">
-                <a class="project-link-icons" href="https://github.com/gildoch" target="_blank">
-                  <ion-icon size="large" name="logo-github"></ion-icon>
-                </a>
+      <!--Project item 3 start-->
+      <div class="cardport">
+        <img src="./assets/answers.png"></img>
+        <div class="cardportcontent">
+          <h3>Quizzical</h3>
 
-                <a class="project-link-icons" href="https://gildoch.github.io/movie-watchlist/" target="_blank">
-                  <ion-icon size="large" name="link-outline"></ion-icon>
-                </a>
-
-              </div>
-            </div>
-          </header>
-          <div class="project-item-content">
-            <h2>Movie Watchlist</h2>
-            <p> </p>
+          <div class="cardportitems">
+            <ul>
+              <li>HTML |</li>
+              <li>CSS |</li>
+              <li>React.js |</li>
+              <li>MongoDB |</li>
+              <li>OTDB API </li>
+            </ul>
           </div>
-          <footer class="project-item-footer">
+          <a href="#"><button class="btn">VISUALIZAR</button></a>
+        </div>
+      </div>
+      <!--Project item 3 end-->
+
+      <!--Project item 4 start-->
+      <div class="cardport">
+        <img src="./assets/tenzies.jpg"></img>
+        <div class="cardportcontent">
+          <h3>Tenzies Game</h3>
+
+          <div class="cardportitems">
+            <ul>
+              <li>HTML |</li>
+              <li>CSS |</li>
+              <li>React.js |</li>
+              <li>MongoDB </li>
+            </ul>
+          </div>
+          <a href="#"><button class="btn">VISUALIZAR</button></a>
+        </div>
+      </div>
+      <!--Project item 4 end-->
+
+      <!--Project item 5 start-->
+      <div class="cardport">
+        <img src="./assets/Meme Generator.jpg"></img>
+        <div class="cardportcontent">
+          <h3>Meme Generator</h3>
+
+          <div class="cardportitems">
+            <ul>
+              <li>HTML |</li>
+              <li>CSS |</li>
+              <li>React.js |</li>
+              <li>Meme API </li>
+            </ul>
+          </div>
+          <a href="https://gildoch.github.io/meme-generator/" target="_blank"><button
+              class="btn">VISUALIZAR</button></a>
+        </div>
+      </div>
+      <!--Project item 5 end-->
+
+      <!--Project item 6 start-->
+      <div class="cardport">
+        <img src="./assets/Dark-invoice-filled.png"></img>
+        <div class="cardportcontent">
+          <h3>Invoice Tracker</h3>
+
+          <div class="cardportitems">
+            <ul>
+              <li>HTML |</li>
+              <li>CSS |</li>
+              <li>JS</li>
+            </ul>
+          </div>
+          <a href="#"><button class="btn">VISUALIZAR</button></a>
+        </div>
+      </div>
+      <!--Project item 6 end-->
+
+      <!--Project item 7 start-->
+      <div class="cardport">
+        <img src="./assets/populated-state.png"></img>
+        <div class="cardportcontent">
+          <h3>Password Generator</h3>
+
+          <div class="cardportitems">
+            <ul>
+              <li>HTML |</li>
+              <li>CSS |</li>
+              <li>JS </li>
+            </ul>
+          </div>
+          <a href="https://gildoch.github.io/password-generator/" target="_blank"><button
+              class="btn">VISUALIZAR</button></a>
+        </div>
+      </div>
+      <!--Project item 7 end-->
+
+      <!--Project item 8 start-->
+      <div class="cardport">
+        <img src="./assets/dark-color-picker.png"></img>
+        <div class="cardportcontent">
+          <h3>Color Picker</h3>
+
+          <div class="cardportitems">
             <ul>
               <li>HTML |</li>
               <li>CSS |</li>
               <li>JS |</li>
-              <li>OMDB API </li>
+              <li>Color API</li>
             </ul>
-          </footer>
+          </div>
+          <a href="https://gildoch.github.io/color-scheme-generator/" target="_blank"><button
+              class="btn">VISUALIZAR</button></a>
         </div>
       </div>
+      <!--Project item 8 end-->
 
+      <!--Project item 9 start-->
+      <div class="cardport">
+        <img src="./assets/ipemo/capa.jpg"></img>
+        <div class="cardportcontent">
+          <h3>Projecto IPEMO</h3>
+
+          <div class="cardportitems">
+            <ul>
+              <li>Internet |</li>
+              <li>Cabeamento |</li>
+              <li>Rede de Computadores </li>
+            </ul>
+          </div>
+          <a href="./pages/portfolio-item-ipemo.html" target="_blank"><button class="btn">VISUALIZAR</button></a>
+        </div>
+      </div>
+      <!--Project item 9 end-->
+
+      <!--Project item 10 start-->
+      <div class="cardport">
+        <img src="./assets/ciss/capa.jpg"></img>
+        <div class="cardportcontent">
+          <h3>Projecto CCV</h3>
+
+          <div class="cardportitems">
+            <ul>
+              <li>Internet |</li>
+              <li>Cabeamento |</li>
+              <li>Rede de Computadores </li>
+            </ul>
+          </div>
+          <a href="./pages/portfolio-item-ciss.html" target="_blank"><button class="btn">VISUALIZAR</button></a>
+        </div>
+      </div>
+      <!--Project item 10 end-->
+
+      <!--Project item 11 start-->
+      <div class="cardport more-proj">
+        <img src="./assets/github-octocat.png"></img>
+        <div class="cardportcontent">
+          <h3>Veja mais...</h3>
+
+          <div class="cardportitems">
+            <a class="project-link-icons" href="https://github.com/gildoch" target="_blank">
+              <ion-icon size="large" name="logo-github"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--Project item 11 end-->
     </div>
-
   </section>
 
   <!--
