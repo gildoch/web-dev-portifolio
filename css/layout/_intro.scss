@@ -240,6 +240,26 @@
   }
 }
 
+@media (min-width: $breakpoint-600) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    /*grid-template-areas: 
+            "img title"
+            "img subtitle";*/
+    grid-template-columns: min-content max-content;
+  }
+
+  .img_intro {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
 @media (max-width: 500px) {
   .lcr--content {
     margin-top: 40%;

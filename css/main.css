@@ -382,6 +382,22 @@ $btn-transition: all, 0.2s ease-in-out;*/
     width: 100%; }
     .lcr-buttonContainer:hover {
       background-color: transparent !important; } }
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    /*grid-template-areas: 
+            "img title"
+            "img subtitle";*/
+    grid-template-columns: min-content max-content; }
+
+  .img_intro {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2; } }
 @media (max-width: 500px) {
   .lcr--content {
     margin-top: 40%; }
@@ -450,16 +466,16 @@ $btn-transition: all, 0.2s ease-in-out;*/
   background-color: #e6e6e6;
   color: #212529;
   text-align: center;
-  margin-top: 10px; }
+  margin: 10px auto; }
   .my-work .section__subtitle--work {
     color: #f05f40;
     font-weight: 900;
     padding: 15px; }
   .my-work .portfolio {
-    display: grid;
     width: 80%;
+    display: grid;
     margin: 1em auto;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px; }
     .my-work .portfolio .cardport {
       background-color: #ffffff;
@@ -504,6 +520,14 @@ $btn-transition: all, 0.2s ease-in-out;*/
   padding: 1rem;
   color: #f05f40; }
 
+@media (max-width: 500px) {
+  .my-work {
+    padding: 3em 1em; }
+    .my-work .portfolio {
+      width: 100%; } }
+@media (max-width: 370px) {
+  .my-work {
+    padding: 3em .5em; } }
 .skill-me {
   /* background-color: darken($color: #ffffff, $amount: 8); */ }
   .skill-me .section-title {
@@ -824,31 +848,6 @@ h3 {
   margin: 0;
   font-size: 1.25rem; }
 
-@media (min-width: 600px) {
-  .intro {
-    display: grid;
-    width: min-content;
-    margin: 0 auto;
-    grid-column-gap: 1em;
-    /*grid-template-areas: 
-            "img title"
-            "img subtitle";*/
-    grid-template-columns: min-content max-content; }
-
-  .img_intro {
-    grid-area: img;
-    min-width: 250px;
-    position: relative;
-    z-index: 2; } }
-@media (min-width: 800px) {
-  .services {
-    display: flex;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto; }
-
-  .service + .service {
-    margin-left: 2em; } }
 /* Buttons */
 .btn {
   display: inline-block;

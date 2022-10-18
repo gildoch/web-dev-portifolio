@@ -2,7 +2,7 @@
   background-color: darken($color: #ffffff, $amount: 10);
   color: $clr-dark;
   text-align: center;
-  margin-top: 10px;
+  margin: 10px auto;
 
   .section__subtitle--work {
     color: $clr-accent;
@@ -11,10 +11,10 @@
   }
 
   .portfolio {
-    display: grid;
     width: 80%;
+    display: grid;
     margin: 1em auto;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
 
     .cardport {
@@ -79,4 +79,23 @@
 .project-link-icons ion-icon {
   padding: 1rem;
   color: $clr-accent;
+}
+
+
+@media (max-width: 500px) {
+  .my-work {
+    padding: 3em 1em;
+
+    .portfolio {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .my-work {
+    padding: 3em .5em;
+  }
+
+
 }
