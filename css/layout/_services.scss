@@ -25,6 +25,7 @@
   .services {
     margin-bottom: 2.5em;
 
+
     .service {
       max-width: 500px;
       margin: 0 auto;
@@ -45,6 +46,7 @@
 
       p {
         font-family: $ff-secondary;
+        /* text-align: justify; */
       }
     }
   }

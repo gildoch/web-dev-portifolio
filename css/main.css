@@ -205,6 +205,7 @@ $btn-transition: all, 0.2s ease-in-out;*/
   width: var(--img-size);
   height: var(--img-size);
   object-fit: cover;
+  border: 8px solid #eaeaea;
   border-radius: 50%;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   transition: opacity 0.3s; }
@@ -451,7 +452,8 @@ $btn-transition: all, 0.2s ease-in-out;*/
         text-align: center;
         font-weight: bold; }
       .my-services .services .service p {
-        font-family: "Source Code Pro", monospace; }
+        font-family: "Source Code Pro", monospace;
+        /* text-align: justify; */ }
 
 @media (min-width: 800px) {
   .services {
